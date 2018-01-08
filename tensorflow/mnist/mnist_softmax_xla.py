@@ -32,8 +32,9 @@ FLAGS = None
 
 def main(_):
   # Import data
-  mnist = input_data.read_data_sets(FLAGS.data_dir)
-
+  mnist = input_data.read_data_sets(FLAGS.data_dir,one_hot=True)
+  print(mnist.train.images.shape)
+  print(mnist.train.labels.shape)
   # Create the model
   x = tf.placeholder(tf.float32, [None, 784])
   w = tf.Variable(tf.zeros([784, 10]))
@@ -41,8 +42,8 @@ def main(_):
   y = tf.matmul(x, w) + b
 
   # Define loss and optimizer
-  y_ = tf.placeholder(tf.int64, [None])
-
+  # y_ = tf.placeholder(tf.int64, [None])
+  y_ = tf.placeholder(dtype=tf.float32, shape=[None, 10])
   # The raw formulation of cross-entropy,
   #
   #   tf.reduce_mean(-tf.reduce_sum(y_ * tf.log(tf.nn.softmax(y)),
@@ -52,8 +53,12 @@ def main(_):
   #
   # So here we use tf.losses.sparse_softmax_cross_entropy on the raw
   # logit outputs of 'y', and then average across the batch.
-  cross_entropy = tf.losses.sparse_softmax_cross_entropy(labels=y_, logits=y)
-  train_step = tf.train.GradientDescentOptimizer(0.5).minimize(cross_entropy)
+  cross_entropy = tf.nn.softmax_cross_entropy_with_logits(labels=y_,logits=y)
+  # cross_entropy = tf.reduce_mean(-tf.reduce_sum(y_ * tf.log(tf.nn.softmax(y)),reduction_indices=[1]))
+  global_step = tf.Variable(0)
+  learning_rate = tf.train.exponential_decay(0.05, global_step, 10, 0.98, staircase=True)
+
+  train_step = tf.train.GradientDescentOptimizer(learning_rate=learning_rate).minimize(cross_entropy,global_step=global_step)
 
   config = tf.ConfigProto()
   jit_level = 0
@@ -85,7 +90,7 @@ def main(_):
       sess.run(train_step, feed_dict={x: batch_xs, y_: batch_ys})
 
   # Test trained model
-  correct_prediction = tf.equal(tf.argmax(y, 1), y_)
+  correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(y_,1))
   accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
   print(sess.run(accuracy,
                  feed_dict={x: mnist.test.images,

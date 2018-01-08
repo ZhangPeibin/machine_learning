@@ -1,0 +1,1511 @@
+{
+    "traceEvents": [
+        {
+            "ph": "M",
+            "args": {
+                "name": "Allocators"
+            },
+            "pid": 0,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Compute"
+            },
+            "pid": 1,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Tensors"
+            },
+            "pid": 2,
+            "name": "process_name"
+        },
+        {
+            "name": "NoOp",
+            "args": {
+                "name": "_SOURCE",
+                "op": "NoOp"
+            },
+            "pid": 1,
+            "ts": 1515400639760695,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "ExponentialDecay/learning_rate",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1515400639760712,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "_Arg",
+            "args": {
+                "name": "_arg_Placeholder_1_0_1",
+                "op": "_Arg"
+            },
+            "pid": 1,
+            "ts": 1515400639760711,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "ExponentialDecay/Cast_2/x",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1515400639760719,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "_Arg",
+            "args": {
+                "name": "_arg_Placeholder_0_0",
+                "op": "_Arg"
+            },
+            "pid": 1,
+            "ts": 1515400639760714,
+            "cat": "Op",
+            "tid": 2,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "ExponentialDecay/Cast_1",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1515400639760722,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Shape",
+            "args": {
+                "input0": "_arg_Placeholder_1_0_1",
+                "name": "Shape_2",
+                "op": "Shape"
+            },
+            "pid": 1,
+            "ts": 1515400639760721,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "Slice_2/begin",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1515400639760726,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 1
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "Slice_2/size",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1515400639760728,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "Variable_2",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1515400639760725,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "Variable_1",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1515400639760726,
+            "cat": "Op",
+            "tid": 2,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "gradients/Const",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1515400639760732,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 1
+        },
+        {
+            "name": "Identity",
+            "args": {
+                "input0": "Variable_2",
+                "name": "Variable_2/read",
+                "op": "Identity"
+            },
+            "pid": 1,
+            "ts": 1515400639760732,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "Identity",
+            "args": {
+                "input0": "Variable_1",
+                "name": "Variable_1/read",
+                "op": "Identity"
+            },
+            "pid": 1,
+            "ts": 1515400639760733,
+            "cat": "Op",
+            "tid": 2,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "gradients/SoftmaxCrossEntropyWithLogits_grad/ExpandDims/dim",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1515400639760734,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "concat/values_0",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1515400639760737,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "Cast",
+            "args": {
+                "input0": "Variable_2/read",
+                "name": "ExponentialDecay/Cast",
+                "op": "Cast"
+            },
+            "pid": 1,
+            "ts": 1515400639760736,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "Slice/size",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1515400639760740,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "RealDiv",
+            "args": {
+                "input0": "ExponentialDecay/Cast",
+                "input1": "ExponentialDecay/Cast_1",
+                "name": "ExponentialDecay/truediv",
+                "op": "RealDiv"
+            },
+            "pid": 1,
+            "ts": 1515400639760740,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "ExponentialDecay/Cast_1",
+            "pid": 1,
+            "ts": 1515400639760725,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 0
+        },
+        {
+            "name": "ExponentialDecay/Cast_1",
+            "pid": 1,
+            "ts": 1515400639760740,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "t",
+            "id": 0
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "concat/axis",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1515400639760744,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "Floor",
+            "args": {
+                "input0": "ExponentialDecay/truediv",
+                "name": "ExponentialDecay/Floor",
+                "op": "Floor"
+            },
+            "pid": 1,
+            "ts": 1515400639760745,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "Variable",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1515400639760737,
+            "cat": "Op",
+            "tid": 2,
+            "ph": "X",
+            "dur": 12
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "gradients/add_grad/Shape_1",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1515400639760747,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "Pow",
+            "args": {
+                "input0": "ExponentialDecay/Cast_2/x",
+                "input1": "ExponentialDecay/Floor",
+                "name": "ExponentialDecay/Pow",
+                "op": "Pow"
+            },
+            "pid": 1,
+            "ts": 1515400639760748,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "ExponentialDecay/Cast_2/x",
+            "pid": 1,
+            "ts": 1515400639760721,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 1
+        },
+        {
+            "name": "ExponentialDecay/Cast_2/x",
+            "pid": 1,
+            "ts": 1515400639760748,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "t",
+            "id": 1
+        },
+        {
+            "name": "Identity",
+            "args": {
+                "input0": "Variable",
+                "name": "Variable/read",
+                "op": "Identity"
+            },
+            "pid": 1,
+            "ts": 1515400639760750,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "Variable",
+            "pid": 1,
+            "ts": 1515400639760749,
+            "cat": "DataFlow",
+            "tid": 2,
+            "ph": "s",
+            "id": 2
+        },
+        {
+            "name": "Variable",
+            "pid": 1,
+            "ts": 1515400639760750,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 2
+        },
+        {
+            "name": "Mul",
+            "args": {
+                "input0": "ExponentialDecay/learning_rate",
+                "input1": "ExponentialDecay/Pow",
+                "name": "ExponentialDecay",
+                "op": "Mul"
+            },
+            "pid": 1,
+            "ts": 1515400639760751,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "ExponentialDecay/learning_rate",
+            "pid": 1,
+            "ts": 1515400639760717,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 3
+        },
+        {
+            "name": "ExponentialDecay/learning_rate",
+            "pid": 1,
+            "ts": 1515400639760751,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "t",
+            "id": 3
+        },
+        {
+            "name": "Slice",
+            "args": {
+                "input2": "Slice/size",
+                "input0": "Shape_2",
+                "input1": "Slice_2/size",
+                "name": "Slice_1",
+                "op": "Slice"
+            },
+            "pid": 1,
+            "ts": 1515400639760751,
+            "cat": "Op",
+            "tid": 2,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Shape_2",
+            "pid": 1,
+            "ts": 1515400639760724,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "s",
+            "id": 4
+        },
+        {
+            "name": "Shape_2",
+            "pid": 1,
+            "ts": 1515400639760751,
+            "cat": "DataFlow",
+            "tid": 2,
+            "ph": "t",
+            "id": 4
+        },
+        {
+            "name": "Slice_2/size",
+            "pid": 1,
+            "ts": 1515400639760730,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 5
+        },
+        {
+            "name": "Slice_2/size",
+            "pid": 1,
+            "ts": 1515400639760751,
+            "cat": "DataFlow",
+            "tid": 2,
+            "ph": "t",
+            "id": 5
+        },
+        {
+            "name": "Slice/size",
+            "pid": 1,
+            "ts": 1515400639760742,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 6
+        },
+        {
+            "name": "Slice/size",
+            "pid": 1,
+            "ts": 1515400639760751,
+            "cat": "DataFlow",
+            "tid": 2,
+            "ph": "t",
+            "id": 6
+        },
+        {
+            "name": "ConcatV2",
+            "args": {
+                "input2": "concat/axis",
+                "input0": "concat/values_0",
+                "input1": "Slice_1",
+                "name": "concat_1",
+                "op": "ConcatV2"
+            },
+            "pid": 1,
+            "ts": 1515400639760757,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "Slice_1",
+            "pid": 1,
+            "ts": 1515400639760756,
+            "cat": "DataFlow",
+            "tid": 2,
+            "ph": "s",
+            "id": 7
+        },
+        {
+            "name": "Slice_1",
+            "pid": 1,
+            "ts": 1515400639760757,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 7
+        },
+        {
+            "name": "Reshape",
+            "args": {
+                "input0": "_arg_Placeholder_1_0_1",
+                "input1": "concat_1",
+                "name": "Reshape_1",
+                "op": "Reshape"
+            },
+            "pid": 1,
+            "ts": 1515400639760765,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "_arg_Placeholder_1_0_1",
+            "pid": 1,
+            "ts": 1515400639760719,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "s",
+            "id": 8
+        },
+        {
+            "name": "_arg_Placeholder_1_0_1",
+            "pid": 1,
+            "ts": 1515400639760765,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 8
+        },
+        {
+            "name": "MatMul",
+            "args": {
+                "input0": "_arg_Placeholder_0_0",
+                "input1": "Variable/read",
+                "name": "MatMul",
+                "op": "MatMul"
+            },
+            "pid": 1,
+            "ts": 1515400639760753,
+            "cat": "Op",
+            "tid": 3,
+            "ph": "X",
+            "dur": 112
+        },
+        {
+            "name": "_arg_Placeholder_0_0",
+            "pid": 1,
+            "ts": 1515400639760721,
+            "cat": "DataFlow",
+            "tid": 2,
+            "ph": "s",
+            "id": 9
+        },
+        {
+            "name": "_arg_Placeholder_0_0",
+            "pid": 1,
+            "ts": 1515400639760753,
+            "cat": "DataFlow",
+            "tid": 3,
+            "ph": "t",
+            "id": 9
+        },
+        {
+            "name": "Variable/read",
+            "pid": 1,
+            "ts": 1515400639760752,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 10
+        },
+        {
+            "name": "Variable/read",
+            "pid": 1,
+            "ts": 1515400639760753,
+            "cat": "DataFlow",
+            "tid": 3,
+            "ph": "t",
+            "id": 10
+        },
+        {
+            "name": "Shape",
+            "args": {
+                "input0": "MatMul",
+                "name": "gradients/add_grad/Shape",
+                "op": "Shape"
+            },
+            "pid": 1,
+            "ts": 1515400639760868,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "MatMul",
+            "pid": 1,
+            "ts": 1515400639760865,
+            "cat": "DataFlow",
+            "tid": 3,
+            "ph": "s",
+            "id": 11
+        },
+        {
+            "name": "MatMul",
+            "pid": 1,
+            "ts": 1515400639760868,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 11
+        },
+        {
+            "name": "BroadcastGradientArgs",
+            "args": {
+                "input0": "gradients/add_grad/Shape",
+                "input1": "gradients/add_grad/Shape_1",
+                "name": "gradients/add_grad/BroadcastGradientArgs",
+                "op": "BroadcastGradientArgs"
+            },
+            "pid": 1,
+            "ts": 1515400639760871,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Add",
+            "args": {
+                "input0": "MatMul",
+                "input1": "Variable_1/read",
+                "name": "add",
+                "op": "Add"
+            },
+            "pid": 1,
+            "ts": 1515400639760871,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "MatMul",
+            "pid": 1,
+            "ts": 1515400639760865,
+            "cat": "DataFlow",
+            "tid": 3,
+            "ph": "s",
+            "id": 12
+        },
+        {
+            "name": "MatMul",
+            "pid": 1,
+            "ts": 1515400639760871,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "t",
+            "id": 12
+        },
+        {
+            "name": "Variable_1/read",
+            "pid": 1,
+            "ts": 1515400639760735,
+            "cat": "DataFlow",
+            "tid": 2,
+            "ph": "s",
+            "id": 13
+        },
+        {
+            "name": "Variable_1/read",
+            "pid": 1,
+            "ts": 1515400639760871,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "t",
+            "id": 13
+        },
+        {
+            "name": "Shape",
+            "args": {
+                "input0": "add",
+                "name": "Shape",
+                "op": "Shape"
+            },
+            "pid": 1,
+            "ts": 1515400639760881,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "add",
+            "pid": 1,
+            "ts": 1515400639760879,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "s",
+            "id": 14
+        },
+        {
+            "name": "add",
+            "pid": 1,
+            "ts": 1515400639760881,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 14
+        },
+        {
+            "name": "Slice",
+            "args": {
+                "input2": "Slice_2/size",
+                "input0": "Shape",
+                "input1": "Slice_2/begin",
+                "name": "Slice_2",
+                "op": "Slice"
+            },
+            "pid": 1,
+            "ts": 1515400639760886,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Slice",
+            "args": {
+                "input2": "Slice/size",
+                "input0": "Shape",
+                "input1": "Slice_2/size",
+                "name": "Slice",
+                "op": "Slice"
+            },
+            "pid": 1,
+            "ts": 1515400639760887,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Shape",
+            "pid": 1,
+            "ts": 1515400639760884,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 15
+        },
+        {
+            "name": "Shape",
+            "pid": 1,
+            "ts": 1515400639760887,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "t",
+            "id": 15
+        },
+        {
+            "name": "Slice_2/size",
+            "pid": 1,
+            "ts": 1515400639760730,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 16
+        },
+        {
+            "name": "Slice_2/size",
+            "pid": 1,
+            "ts": 1515400639760887,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "t",
+            "id": 16
+        },
+        {
+            "name": "Slice/size",
+            "pid": 1,
+            "ts": 1515400639760742,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 17
+        },
+        {
+            "name": "Slice/size",
+            "pid": 1,
+            "ts": 1515400639760887,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "t",
+            "id": 17
+        },
+        {
+            "name": "ConcatV2",
+            "args": {
+                "input2": "concat/axis",
+                "input0": "concat/values_0",
+                "input1": "Slice",
+                "name": "concat",
+                "op": "ConcatV2"
+            },
+            "pid": 1,
+            "ts": 1515400639760891,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Slice",
+            "pid": 1,
+            "ts": 1515400639760890,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "s",
+            "id": 18
+        },
+        {
+            "name": "Slice",
+            "pid": 1,
+            "ts": 1515400639760891,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 18
+        },
+        {
+            "name": "Reshape",
+            "args": {
+                "input0": "add",
+                "input1": "concat",
+                "name": "Reshape",
+                "op": "Reshape"
+            },
+            "pid": 1,
+            "ts": 1515400639760896,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "add",
+            "pid": 1,
+            "ts": 1515400639760879,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "s",
+            "id": 19
+        },
+        {
+            "name": "add",
+            "pid": 1,
+            "ts": 1515400639760896,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 19
+        },
+        {
+            "name": "SoftmaxCrossEntropyWithLogits",
+            "args": {
+                "input0": "Reshape",
+                "input1": "Reshape_1",
+                "name": "SoftmaxCrossEntropyWithLogits",
+                "op": "SoftmaxCrossEntropyWithLogits"
+            },
+            "pid": 1,
+            "ts": 1515400639760900,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 96
+        },
+        {
+            "name": "Reshape",
+            "args": {
+                "input0": "SoftmaxCrossEntropyWithLogits",
+                "input1": "Slice_2",
+                "name": "Reshape_2",
+                "op": "Reshape"
+            },
+            "pid": 1,
+            "ts": 1515400639760998,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "Shape",
+            "args": {
+                "input0": "SoftmaxCrossEntropyWithLogits",
+                "name": "gradients/Reshape_2_grad/Shape",
+                "op": "Shape"
+            },
+            "pid": 1,
+            "ts": 1515400639761001,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "Shape",
+            "args": {
+                "input0": "Reshape_2",
+                "name": "gradients/Shape",
+                "op": "Shape"
+            },
+            "pid": 1,
+            "ts": 1515400639761004,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "Fill",
+            "args": {
+                "input0": "gradients/Shape",
+                "input1": "gradients/Const",
+                "name": "gradients/Fill",
+                "op": "Fill"
+            },
+            "pid": 1,
+            "ts": 1515400639761007,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "Reshape",
+            "args": {
+                "input0": "gradients/Fill",
+                "input1": "gradients/Reshape_2_grad/Shape",
+                "name": "gradients/Reshape_2_grad/Reshape",
+                "op": "Reshape"
+            },
+            "pid": 1,
+            "ts": 1515400639761010,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "ExpandDims",
+            "args": {
+                "input0": "gradients/Reshape_2_grad/Reshape",
+                "input1": "gradients/SoftmaxCrossEntropyWithLogits_grad/ExpandDims/dim",
+                "name": "gradients/SoftmaxCrossEntropyWithLogits_grad/ExpandDims",
+                "op": "ExpandDims"
+            },
+            "pid": 1,
+            "ts": 1515400639761013,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "Mul",
+            "args": {
+                "input0": "gradients/SoftmaxCrossEntropyWithLogits_grad/ExpandDims",
+                "input1": "SoftmaxCrossEntropyWithLogits:1",
+                "name": "gradients/SoftmaxCrossEntropyWithLogits_grad/mul",
+                "op": "Mul"
+            },
+            "pid": 1,
+            "ts": 1515400639761017,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 40
+        },
+        {
+            "name": "Reshape",
+            "args": {
+                "input0": "gradients/SoftmaxCrossEntropyWithLogits_grad/mul",
+                "input1": "Shape",
+                "name": "gradients/Reshape_grad/Reshape",
+                "op": "Reshape"
+            },
+            "pid": 1,
+            "ts": 1515400639761058,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "Sum",
+            "args": {
+                "input0": "gradients/Reshape_grad/Reshape",
+                "input1": "gradients/add_grad/BroadcastGradientArgs",
+                "name": "gradients/add_grad/Sum",
+                "op": "Sum"
+            },
+            "pid": 1,
+            "ts": 1515400639761063,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Reshape",
+            "args": {
+                "input0": "gradients/add_grad/Sum",
+                "input1": "gradients/add_grad/Shape",
+                "name": "gradients/add_grad/Reshape",
+                "op": "Reshape"
+            },
+            "pid": 1,
+            "ts": 1515400639761067,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "Sum",
+            "args": {
+                "input0": "gradients/Reshape_grad/Reshape",
+                "input1": "gradients/add_grad/BroadcastGradientArgs:1",
+                "name": "gradients/add_grad/Sum_1",
+                "op": "Sum"
+            },
+            "pid": 1,
+            "ts": 1515400639761065,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "gradients/Reshape_grad/Reshape",
+            "pid": 1,
+            "ts": 1515400639761060,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 20
+        },
+        {
+            "name": "gradients/Reshape_grad/Reshape",
+            "pid": 1,
+            "ts": 1515400639761065,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "t",
+            "id": 20
+        },
+        {
+            "name": "gradients/add_grad/BroadcastGradientArgs:1",
+            "pid": 1,
+            "ts": 1515400639760874,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 21
+        },
+        {
+            "name": "gradients/add_grad/BroadcastGradientArgs:1",
+            "pid": 1,
+            "ts": 1515400639761065,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "t",
+            "id": 21
+        },
+        {
+            "name": "Reshape",
+            "args": {
+                "input0": "gradients/add_grad/Sum_1",
+                "input1": "gradients/add_grad/Shape_1",
+                "name": "gradients/add_grad/Reshape_1",
+                "op": "Reshape"
+            },
+            "pid": 1,
+            "ts": 1515400639761073,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "gradients/add_grad/Sum_1",
+            "pid": 1,
+            "ts": 1515400639761072,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "s",
+            "id": 22
+        },
+        {
+            "name": "gradients/add_grad/Sum_1",
+            "pid": 1,
+            "ts": 1515400639761073,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 22
+        },
+        {
+            "name": "NoOp",
+            "args": {
+                "input0": "^gradients/add_grad/Reshape",
+                "input1": "^gradients/add_grad/Reshape_1",
+                "name": "gradients/add_grad/tuple/group_deps",
+                "op": "NoOp"
+            },
+            "pid": 1,
+            "ts": 1515400639761076,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 1
+        },
+        {
+            "name": "Identity",
+            "args": {
+                "input0": "gradients/add_grad/Reshape_1",
+                "input1": "^gradients/add_grad/tuple/group_deps",
+                "name": "gradients/add_grad/tuple/control_dependency_1",
+                "op": "Identity"
+            },
+            "pid": 1,
+            "ts": 1515400639761078,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 1
+        },
+        {
+            "name": "ApplyGradientDescent",
+            "args": {
+                "input2": "gradients/add_grad/tuple/control_dependency_1",
+                "input0": "Variable_1",
+                "input1": "ExponentialDecay",
+                "name": "GradientDescent/update_Variable_1/ApplyGradientDescent",
+                "op": "ApplyGradientDescent"
+            },
+            "pid": 1,
+            "ts": 1515400639761081,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Variable_1",
+            "pid": 1,
+            "ts": 1515400639760732,
+            "cat": "DataFlow",
+            "tid": 2,
+            "ph": "s",
+            "id": 23
+        },
+        {
+            "name": "Variable_1",
+            "pid": 1,
+            "ts": 1515400639761081,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 23
+        },
+        {
+            "name": "ExponentialDecay",
+            "pid": 1,
+            "ts": 1515400639760754,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "s",
+            "id": 24
+        },
+        {
+            "name": "ExponentialDecay",
+            "pid": 1,
+            "ts": 1515400639761081,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 24
+        },
+        {
+            "name": "Identity",
+            "args": {
+                "input0": "gradients/add_grad/Reshape",
+                "input1": "^gradients/add_grad/tuple/group_deps",
+                "name": "gradients/add_grad/tuple/control_dependency",
+                "op": "Identity"
+            },
+            "pid": 1,
+            "ts": 1515400639761082,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "gradients/add_grad/Reshape",
+            "pid": 1,
+            "ts": 1515400639761069,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 25
+        },
+        {
+            "name": "gradients/add_grad/Reshape",
+            "pid": 1,
+            "ts": 1515400639761082,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "t",
+            "id": 25
+        },
+        {
+            "name": "MatMul",
+            "args": {
+                "input0": "_arg_Placeholder_0_0",
+                "input1": "gradients/add_grad/tuple/control_dependency",
+                "name": "gradients/MatMul_grad/MatMul_1",
+                "op": "MatMul"
+            },
+            "pid": 1,
+            "ts": 1515400639761088,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 165
+        },
+        {
+            "name": "_arg_Placeholder_0_0",
+            "pid": 1,
+            "ts": 1515400639760721,
+            "cat": "DataFlow",
+            "tid": 2,
+            "ph": "s",
+            "id": 26
+        },
+        {
+            "name": "_arg_Placeholder_0_0",
+            "pid": 1,
+            "ts": 1515400639761088,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 26
+        },
+        {
+            "name": "gradients/add_grad/tuple/control_dependency",
+            "pid": 1,
+            "ts": 1515400639761085,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "s",
+            "id": 27
+        },
+        {
+            "name": "gradients/add_grad/tuple/control_dependency",
+            "pid": 1,
+            "ts": 1515400639761088,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 27
+        },
+        {
+            "name": "NoOp",
+            "args": {
+                "input0": "^gradients/MatMul_grad/MatMul",
+                "input1": "^gradients/MatMul_grad/MatMul_1",
+                "name": "gradients/MatMul_grad/tuple/group_deps",
+                "op": "NoOp"
+            },
+            "pid": 1,
+            "ts": 1515400639761256,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 1
+        },
+        {
+            "name": "MatMul",
+            "args": {
+                "input0": "gradients/add_grad/tuple/control_dependency",
+                "input1": "Variable/read",
+                "name": "gradients/MatMul_grad/MatMul",
+                "op": "MatMul"
+            },
+            "pid": 1,
+            "ts": 1515400639761089,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 165
+        },
+        {
+            "name": "Variable/read",
+            "pid": 1,
+            "ts": 1515400639760752,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 28
+        },
+        {
+            "name": "Variable/read",
+            "pid": 1,
+            "ts": 1515400639761089,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "t",
+            "id": 28
+        },
+        {
+            "name": "Identity",
+            "args": {
+                "input0": "gradients/MatMul_grad/MatMul_1",
+                "input1": "^gradients/MatMul_grad/tuple/group_deps",
+                "name": "gradients/MatMul_grad/tuple/control_dependency_1",
+                "op": "Identity"
+            },
+            "pid": 1,
+            "ts": 1515400639761259,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "ApplyGradientDescent",
+            "args": {
+                "input2": "gradients/MatMul_grad/tuple/control_dependency_1",
+                "input0": "Variable",
+                "input1": "ExponentialDecay",
+                "name": "GradientDescent/update_Variable/ApplyGradientDescent",
+                "op": "ApplyGradientDescent"
+            },
+            "pid": 1,
+            "ts": 1515400639761263,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "Variable",
+            "pid": 1,
+            "ts": 1515400639760749,
+            "cat": "DataFlow",
+            "tid": 2,
+            "ph": "s",
+            "id": 29
+        },
+        {
+            "name": "Variable",
+            "pid": 1,
+            "ts": 1515400639761263,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 29
+        },
+        {
+            "name": "ExponentialDecay",
+            "pid": 1,
+            "ts": 1515400639760754,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "s",
+            "id": 30
+        },
+        {
+            "name": "ExponentialDecay",
+            "pid": 1,
+            "ts": 1515400639761263,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 30
+        },
+        {
+            "name": "NoOp",
+            "args": {
+                "input0": "^GradientDescent/update_Variable/ApplyGradientDescent",
+                "input1": "^GradientDescent/update_Variable_1/ApplyGradientDescent",
+                "name": "GradientDescent/update",
+                "op": "NoOp"
+            },
+            "pid": 1,
+            "ts": 1515400639761273,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 1
+        },
+        {
+            "name": "Const",
+            "args": {
+                "input0": "^GradientDescent/update",
+                "name": "GradientDescent/value",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1515400639761276,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "AssignAdd",
+            "args": {
+                "input0": "Variable_2",
+                "input1": "GradientDescent/value",
+                "name": "GradientDescent",
+                "op": "AssignAdd"
+            },
+            "pid": 1,
+            "ts": 1515400639761280,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Variable_2",
+            "pid": 1,
+            "ts": 1515400639760731,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "s",
+            "id": 31
+        },
+        {
+            "name": "Variable_2",
+            "pid": 1,
+            "ts": 1515400639761280,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 31
+        }
+    ]
+}
